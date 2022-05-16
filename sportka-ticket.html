@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportka ticket</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="assets/css/style.css">
+    <script defer type="text/javascript" src="assets/js/script.js"></script>
+</head>
+
+<body onload="vytvorTabulku()">
+
+    <header>
+        <h1><a href="index.html">Sportka</a></h1>
+    </header>
+    <main>
+        <section class="tickety">
+            <!--<table>
+                    <tr>
+                        <td onclick="oznac(this)">1</td>
+                        <td onclick="oznac(this)">2</td>
+                        <td onclick="oznac(this)">3</td>
+                        <td onclick="oznac(this)">4</td>
+                        <td onclick="oznac(this)">5</td>
+                        <td onclick="oznac(this)">6</td>
+                        <td onclick="oznac(this)">7</td>
+                    </tr>
+                </table>-->
+        </section>
+        <script>//posunuto pod section z důvodu generování tabulky
+            /*document.write("<table>");
+            document.write("<tr>");
+            for (let i = 0; i < 49; i++) {
+                document.write("<td onclick='oznac(this)'>" + (i + 1) + "</td>");
+                if ((i + 1) % 7 == 0) {
+                    document.write("</tr>");
+                    document.write("<tr>");
+                }
+            }
+            document.write("</tr>");
+            document.write("</table>");*/
+        </script>
+        <section>
+            <article>
+                <div>
+                    <button onclick="vytvorTabulku()">Přidej tabulku</button>
+                    <button onclick="losuj()">Losuj</button>
+                </div>
+                <table id="vylosovano">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <table id="serazeno">
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p id="uhodnutaCisla"></p>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
